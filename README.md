@@ -2,7 +2,7 @@
 
 This is the source code for paper: **Knowledgeable or Educated Guess? Revisiting Language Models as Knowledge Bases** (ACL 2021, long paper)
 
-##Reference
+## Reference
 
 If this repository helps you, please kindly cite the following bibtext:
 
