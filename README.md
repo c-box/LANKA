@@ -17,11 +17,11 @@ To reproduce our results:
 ### 1. Create conda environment and install requirements
 
 ```shell
+git clone https://github.com/c-box/LANKA.git
+cd LANKA
 conda create --name lanka python=3.7
 conda activate lanka
 pip install -r requirements.txt
-git clone https://github.com/c-box/LANKA.git
-cd LANKA
 ```
 
 ## 2. Download the data
