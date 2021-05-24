@@ -98,7 +98,7 @@ pip install -r requirements.txt
   python -m scripts.run_case_based --model-name bert-large-cased --task evaluate_analogy_reasoning --cuda-device [device]
   ```
 
-* Detailed comparison for prompt-based and case-based  paradigms (precision $\Delta$, type precision $\Delta$, type change, etc.):
+* Detailed comparison for prompt-based and case-based  paradigms (precision, type precision, type change, etc.):
 
   ```shell
   python -m scripts.run_case_based --model-name bert-large-cased --task type_precision --cuda-device [device]
