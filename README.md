@@ -20,6 +20,8 @@ To reproduce our results:
 conda create --name lanka python=3.7
 conda activate lanka
 pip install -r requirements.txt
+git clone https://github.com/c-box/LANKA.git
+cd LANKA
 ```
 
 ## 2. Download the data
