@@ -42,19 +42,19 @@ pip install -r requirements.txt
 
 * Evaluate the precision on LAMA and WIKI-UNI using different prompts:
 
-  * $T_{man}$
+  * Manually prompts created by Petroni et al. (2019)
 
     ```shell
     python -m scripts.run_prompt_based --relation-type lama_original --model-name bert-large-cased --method evaluation --cuda-device [device]
     ```
 
-  * $T_{mine}$
+  * Mining-based prompts by Jiang et al. (2020b)
 
     ```shell
     python -m scripts.run_prompt_based --relation-type lama_mine --model-name bert-large-cased --method evaluation --cuda-device [device]
     ```
 
-  * $T_{auto}$
+  * Automatically searched prompts from Shin et al. (2020)
 
     ```shell
     python -m scripts.run_prompt_based --relation-type lama_auto --model-name bert-large-cased --method evaluation --cuda-device [device]
@@ -90,7 +90,7 @@ pip install -r requirements.txt
   python -m scripts.run_prompt_based --relation-type [relation_type] --model-name bert-large-cased --method evaluation --cuda-device [device]
   ```
 
-####3.2 Case-based Analogy
+#### 3.2 Case-based Analogy
 
 * Evaluate case-based paradigm:
 
