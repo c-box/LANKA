@@ -69,7 +69,7 @@ pip install -r requirements.txt
   python -m scripts.run_prompt_based --model-name bert-large-cased --method store_all_distribution --cuda-device [device]
   ```
   
-* Calculate the average percentage of instances being covered by top-k answers or predictions:
+* Calculate the average percentage of instances being covered by top-k answers or predictions (Table 1):
 
   ```shell
   python -m scripts.run_prompt_based --model-name bert-large-cased --method topk_cover --cuda-device [device]
@@ -101,13 +101,13 @@ pip install -r requirements.txt
   python -m scripts.run_case_based --model-name bert-large-cased --task evaluate_analogy_reasoning --cuda-device [device]
   ```
 
-* Detailed comparison for prompt-based and case-based  paradigms (precision, type precision, type change, etc.):
+* Detailed comparison for prompt-based and case-based  paradigms (precision, type precision, type change, etc.) (Table 4):
 
   ```shell
   python -m scripts.run_case_based --model-name bert-large-cased --task type_precision --cuda-device [device]
   ```
 
-* Calculate the in-type rank change:
+* Calculate the in-type rank change (Figure 6):
 
   ```shell
   python -m scripts.run_case_based --model-name bert-large-cased --task type_rank_change --cuda-device [device]
@@ -115,13 +115,13 @@ pip install -r requirements.txt
 
 #### 3.3 Context-based Inference
 
-* For explicit answer leakage:
+* For explicit answer leakage (Table 5 and 6):
 
   ```shell
   python -m scripts.run_context_based --model-name bert-large-cased --method explicit_leak --cuda-device [device]
   ```
 
-* For implicit answer leakage:
+* For implicit answer leakage (Table 7):
 
   ```shell
   python -m scripts.run_context_based --model-name bert-large-cased --method implicit_leak --cuda-device [device]
