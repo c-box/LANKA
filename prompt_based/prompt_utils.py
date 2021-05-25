@@ -107,7 +107,7 @@ def get_mask_distribution(args, relation, model_wrapper: MLMWrapper, return_topk
     input_sentence = relation_template.replace('[X]', model_wrapper.tokenizer.mask_token)
     input_sentence = input_sentence.replace('[Y]', model_wrapper.tokenizer.mask_token)
     input_sentences.append(input_sentence)
-    predict_results = model_wrapper.mlm_predict(
+    predict_results = model_wrapper.predict(
         input_sentences, mask_pos=mask_pos, batch_size=args.batch_size,
         topk=args.mask_topk, max_len=args.max_len
     )
@@ -128,7 +128,7 @@ def calculate_prompt_only_dis_kl_div(args, prompt, lama_dis, model_wrapper):
     if "[MASK]" not in prompt:
         raise RuntimeError("at least one [MASK] token")
 
-    predict_results = model_wrapper.mlm_predict(
+    predict_results = model_wrapper.predict(
         [prompt], mask_pos=-1, batch_size=args.batch_size,
         topk=args.topk, max_len=args.max_len
     )

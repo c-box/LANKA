@@ -1,5 +1,5 @@
 from utils.utils import get_pair, model_prefix
-from utils.mlm_predict import count_sub_words, mlm_predict
+from utils.mlm_predict import count_sub_words
 import re
 from prettytable import PrettyTable
 from models.mlm_wrapper import MLMWrapper
@@ -131,7 +131,7 @@ def get_result_with_context(args, relation, relation_samples,
                     input_sentence = [input_sentence, context]
                 input_sentences.append(input_sentence)
 
-    predict_results = model_wrapper.mlm_predict(
+    predict_results = model_wrapper.predict(
         input_texts=input_sentences,
         mask_pos=0,
         batch_size=args.batch_size,

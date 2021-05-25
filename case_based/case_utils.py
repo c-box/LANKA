@@ -1,4 +1,3 @@
-from utils.mlm_predict import mlm_prdict_results, mlm_predict
 from utils.utils import get_pair, mean_round, get_table_stat, delete_overlap_by_lower, model_prefix, load_roberta_vocab
 from prettytable import PrettyTable
 import os
@@ -154,7 +153,7 @@ def get_resoning_results(args, relation,
 
         input_sentences.append(input_sentence)
 
-    predict_results = model_wrapper.mlm_predict(
+    predict_results = model_wrapper.predict(
         input_sentences, mask_pos=-1, batch_size=args.batch_size,
         obj_tokens=obj_tokens, topk=args.topk, max_len=args.max_len
     )

@@ -2,8 +2,6 @@ from utils.utils import build_model, get_relation_args, get_pair, \
     set_seed, get_table_stat, mean_round, model_prefix
 from utils.read_data import LamaDataset
 from prettytable import PrettyTable
-from utils.mlm_predict import mlm_predict
-import re
 from context_based.context_utils import get_new_context, get_result_with_context
 from utils.utils import filter_samples_by_vocab, load_roberta_vocab
 from models import build_model_wrapper
