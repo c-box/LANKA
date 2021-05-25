@@ -63,16 +63,16 @@ pip install -r requirements.txt
     python -m scripts.run_prompt_based --relation-type lama_auto --model-name bert-large-cased --method evaluation --cuda-device [device]
     ```
 
+* **Store various distributions needed for subsequent experiments:**
+
+  ```shell
+  python -m scripts.run_prompt_based --model-name bert-large-cased --method store_all_distribution --cuda-device [device]
+  ```
+  
 * Calculate the average percentage of instances being covered by top-k answers or predictions:
 
   ```shell
   python -m scripts.run_prompt_based --model-name bert-large-cased --method topk_cover --cuda-device [device]
-  ```
-
-* Store various distributions needed for subsequent experiments:
-
-  ```shell
-  python -m scripts.run_prompt_based --model-name bert-large-cased --method store_all_distribution --cuda-device [device]
   ```
 
 * Calculate the Pearson correlations of the prediction distributions on LAMA and WIKI-UNI (Figure 3):
