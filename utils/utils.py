@@ -267,7 +267,7 @@ def draw_heat_map(data, row_labels, col_labels,
         os.mkdir(pic_dir)
     plt.tight_layout()
     fig = ax.get_figure()
-    fig.savefig('{}/{}.eps'.format(pic_dir, pic_name), format='eps')
+    fig.savefig('{}/{}.png'.format(pic_dir, pic_name), format='png')
     plt.show()
 
 
@@ -310,7 +310,7 @@ def draw_box_plot(corrs, pic_name, pic_dir, ylim=None, hor=True):
     if not os.path.isdir(pic_dir):
         os.makedirs(pic_dir)
     fig = ax.get_figure()
-    fig.savefig('{}/{}.eps'.format(pic_dir, pic_name), format='eps')
+    fig.savefig('{}/{}.png'.format(pic_dir, pic_name), format='png')
 
 
 def draw_corr_scatter(data, pic_name, pic_dir, prompt="T_{man}"):

@@ -75,7 +75,7 @@ pip install -r requirements.txt
   python -m scripts.run_prompt_based --model-name bert-large-cased --method topk_cover --cuda-device [device]
   ```
 
-* Calculate the Pearson correlations of the prediction distributions on LAMA and WIKI-UNI (Figure 3):
+* Calculate the Pearson correlations of the prediction distributions on LAMA and WIKI-UNI (Figure 3, the figures will be stored in the 'pics' folder):
 
   ```shell
   python -m scripts.run_prompt_based --model-name bert-large-cased --method prediction_corr --cuda-device [device]
