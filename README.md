@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ## 2. Download the data
 
-* Download the data using wget
+* Download the data using terminal
 
   ```shell
   pip install gdown
