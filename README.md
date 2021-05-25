@@ -90,7 +90,7 @@ pip install -r requirements.txt
 * Calculate the KL divergence between the prompt-only distribution and golden answer distribution of LAMA (Table 2):
 
   ```shell
-  python -m scripts.run_prompt_based --relation-type [relation_type] --model-name bert-large-cased --method evaluation --cuda-device [device]
+  python -m scripts.run_prompt_based --relation-type [relation_type] --model-name bert-large-cased --method cal_prompt_only_div --cuda-device [device]
   ```
 
 #### 3.2 Case-based Analogy
