@@ -126,7 +126,6 @@ def explicit_leak(args):
             ])
             table_idx += 1
         table.add_row(new_row)
-        print(table)
 
     table = get_table_stat(table)
     print(table)

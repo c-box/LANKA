@@ -105,7 +105,6 @@ def implicit_leak(args):
             ct_false_cst, ct_false_st,
             round(ct_false_cst - ct_false_st, 2)
         ])
-        print(table)
     table = get_table_stat(table)
     print(table)
 

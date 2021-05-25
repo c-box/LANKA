@@ -48,7 +48,7 @@ pip install -r requirements.txt
   * Manually prompts created by Petroni et al. (2019)
 
     ```shell
-    python -m scripts.run_prompt_based --relation-type lama_original --model-name bert-large-cased --method evaluation --cuda-device [device]
+    python -m scripts.run_prompt_based --relation-type lama_original --model-name bert-large-cased --method evaluation --cuda-device [device] --batch-size [batch_size]
     ```
 
   * Mining-based prompts by Jiang et al. (2020b)
