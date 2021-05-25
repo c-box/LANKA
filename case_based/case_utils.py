@@ -142,10 +142,7 @@ def get_resoning_results(args, relation,
             raise RuntimeError("no such prompt")
 
         if model_prefix(args.model_name) == "bert":
-            if args.token_type:
-                input_sentence = [context, input_sentence]
-            else:
-                input_sentence = context + ' {} '.format(sep_token) + input_sentence
+            input_sentence = [context, input_sentence]
         elif model_prefix(args.model_name) == "roberta":
             input_sentence = context + ' {} '.format(sep_token) + input_sentence
         else:

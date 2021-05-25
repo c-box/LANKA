@@ -16,8 +16,8 @@ from matplotlib import rcParams
 
 # You can put the model path here
 MODEL_PATH = {
-    'bert-large-cased': '/share/model/bert/cased_L-24_H-1024_A-16',
-    'roberta-large': '/data/cbox/saved_models/roberta-large',
+    'bert-large-cased': 'bert-large-cased',
+    'roberta-large': 'roberta-large',
 }
 
 
