@@ -1,6 +1,7 @@
 import argparse
 from prompt_based.prompt_eval import all_data_evaluation, plot_prompt, \
     store_all_distribution, plot_predict_lama_vs_uniform, stat_uniform, cal_prompt_only_div
+from prompt_based.prompt_utils import check_args
 
 
 def main():
@@ -29,6 +30,7 @@ def main():
                         ])
 
     args = parser.parse_args()
+    check_args(args)
 
     if args.method == "evaluation":
         all_data_evaluation(args)

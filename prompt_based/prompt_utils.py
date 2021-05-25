@@ -2,7 +2,7 @@ from utils.utils import get_pair, store_json_dic
 import random
 from scipy.stats import pearsonr
 import scipy
-from utils.utils import load_json_dic
+from utils.utils import load_json_dic, model_prefix
 import json
 import os
 import numpy as np
@@ -260,3 +260,12 @@ def sum_dis(dis):
     for token in dis:
         ans += dis[token]
     return ans
+
+
+def check_args(args):
+    if model_prefix(args.model_name) == "roberta":
+        assert "roberta" in args.relation_type, "relation type don't match the model"
+    elif model_prefix(args.model_name) == "bert":
+        assert "lama" in args.relation_type, "relation type don't match the model"
+    else:
+        raise RuntimeError("wrong model")
