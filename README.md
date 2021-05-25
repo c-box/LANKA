@@ -31,7 +31,6 @@ pip install -r requirements.txt
   ```shell
   pip install gdown
   gdown https://drive.google.com/uc?id=1oQ7TXrZ7aQXpZnENu2Sytc8A0D3yvqkP
-  wget https://drive.google.com/uc?export=download&id=1oQ7TXrZ7aQXpZnENu2Sytc8A0D3yvqkP
   unzip data.zip
   rm data.zip
   ```
