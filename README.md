@@ -7,7 +7,7 @@ This is the source code for paper: **Knowledgeable or Educated Guess? Revisiting
 If this repository helps you, please kindly cite the following bibtext:
 
 ```
-
+coming soon~
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ pip install -r requirements.txt
   https://drive.google.com/file/d/1oQ7TXrZ7aQXpZnENu2Sytc8A0D3yvqkP/view?usp=sharing
 
 ## 3. Run the experiments
-
+If your GPU is smaller than 24G, please adjust batch size using "--batch-size" parameter.
 #### 3.1 Prompt-based Retrieval
 
 * Evaluate the precision on LAMA and WIKI-UNI using different prompts:
