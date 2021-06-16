@@ -30,9 +30,9 @@ def main():
                         ])
 
     args = parser.parse_args()
-    check_args(args)
 
     if args.method == "evaluation":
+        check_args(args)
         all_data_evaluation(args)
     elif args.method == "prediction_corr":
         plot_predict_lama_vs_uniform(args)
@@ -43,6 +43,7 @@ def main():
     elif args.method == "topk_cover":
         stat_uniform(args)
     elif args.method == "cal_prompt_only_div":
+        check_args(args)
         cal_prompt_only_div(args)
 
 
