@@ -1,6 +1,7 @@
 import argparse
 from case_based.evaluate_analogy_resoning import evaluate_analogy_reasoning
 from case_based.analogy_resoning_type import type_precision, type_rank_change
+from prompt_based.prompt_utils import check_args
 
 
 def main():
@@ -24,7 +25,7 @@ def main():
     parser.add_argument("--max-len", type=int, default=256)
     parser.add_argument('--task', type=str, default='evaluate_analogy_reasoning')
     args = parser.parse_args()
-
+    check_args(args)
     if args.task == 'evaluate_analogy_reasoning':
         args.topk = 10
         evaluate_analogy_reasoning(args)
