@@ -7,13 +7,11 @@ This is the source code for paper: **Knowledgeable or Educated Guess? Revisiting
 If this repository helps you, please kindly cite the following bibtext:
 
 ```
-@misc{cao2021knowledgeable,
-      title={Knowledgeable or Educated Guess? Revisiting Language Models as Knowledge Bases}, 
-      author={Boxi Cao and Hongyu Lin and Xianpei Han and Le Sun and Lingyong Yan and Meng Liao and Tong Xue and Jin Xu},
-      year={2021},
-      eprint={2106.09231},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@article{cao2021knowledgeable,
+  title={Knowledgeable or Educated Guess? Revisiting Language Models as Knowledge Bases},
+  author={Cao, Boxi and Lin, Hongyu and Han, Xianpei and Sun, Le and Yan, Lingyong and Liao, Meng and Xue, Tong and Xu, Jin},
+  journal={arXiv preprint arXiv:2106.09231},
+  year={2021}
 }
 ```
 
