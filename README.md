@@ -23,7 +23,7 @@ If this repository helps you, please kindly cite the following bibtext:
     address = "Online",
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2021.acl-long.146",
-    pages = "1860--1874",
+    pages = "1860--1874"}
 ```
 
 ## Usage
